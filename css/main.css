@@ -58,3 +58,93 @@ p {
     padding-left: 2em;
     padding-right: 2em;
  }
+
+ .imgTextOverlay{
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+ }
+
+ .imgTextOverlay img{
+    width: 100%;
+ }
+
+ .bottomLeft{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+ }
+
+ .topLeft{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+ }
+
+ .bottomRight{
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+ } 
+
+ .topRight{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+ }
+
+ .center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+
+ #filters{
+    filter: grayscale(100%); 
+    /*filter: sepia(100%);*/
+    /*filter: blur(2px);*/
+ }
+
+ #filters:hover{
+    filter: none;
+ }
+
+ .container{
+    position: relative;
+    width: 50%;
+ }
+
+ .image{
+    display: block;
+    width: 100%;
+    height: auto;
+ }
+
+ .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 3.5s ease;
+    background-color: #04aa60;
+ }
+
+ .container:hover .overlay{
+    opacity: 1;
+ }
+
+ .overlayText{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+ }
